@@ -216,7 +216,7 @@ gcloud compute instances create kraken-admin --zone=us-east1-b --machine-type=n1
 
 - You need to monitor **kraken-admin** and if **CPU utilization** is over **50%** for more than a minute you need to send an email to yourself, as admin of the system.
 
-At Google Cloud Platform, navigate to **Monitoring**, and wait workspace to create `
+At Google Cloud Platform, navigate to **Monitoring**, and wait workspace to create.
 ```
 export EMAIL=$(gcloud auth list --filter=status:ACTIVE --format="value(account)")
 cat >> channel.json << EOF
